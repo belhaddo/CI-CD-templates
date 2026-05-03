@@ -1,0 +1,15 @@
+---
+extends: default
+
+rules:
+  line-length:
+    max: 120
+    allow-non-breakable-words: true
+  indentation:
+    spaces: 2
+    indent-sequences: consistent
+  document-start: disable
+  new-line-at-end-of-file: enable
+  truthy:
+    allowed-values: ["true", "false", "on"]
+  trailing-spaces: disable
