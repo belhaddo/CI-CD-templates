@@ -18,7 +18,7 @@ jobs:
           java-version: ${{ inputs.java-version }}
           distribution: 'temurin'
           cache: 'maven'
-
+      
       - name: Build JAR (Skip Tests)
         run: mvn clean package -DskipTests
 
@@ -38,6 +38,7 @@ jobs:
         with:
           name: app-executable
           path: target/
-
+      
       - name: Run Tests
         run: mvn test
+        
